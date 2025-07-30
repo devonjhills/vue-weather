@@ -1,0 +1,37 @@
+{
+  "name": "vue-weather",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@bybas/weather-icons": "^2.0.0",
+    "@vueuse/core": "^13.5.0",
+    "chart.js": "^4.5.0",
+    "pinia": "^3.0.3",
+    "shadcn-vue": "^2.2.0",
+    "vue": "^3.5.17",
+    "vue-chartjs": "^5.3.2"
+  },
+  "devDependencies": {
+    "@radix-ui/colors": "^3.0.0",
+    "@types/node": "^24.1.0",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.532.0",
+    "postcss": "^8.5.6",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4",
+    "vue-tsc": "^2.2.12"
+  }
+}

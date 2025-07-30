@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Beautiful dark mode design system */
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+    --card: 222 84% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 84% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 84% 5%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 217 91% 60%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 220 9% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 9% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 9% 4%;
+    --primary: 200 98% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 9% 96%;
+    --secondary-foreground: 220 9% 4%;
+    --muted: 220 9% 96%;
+    --muted-foreground: 220 9% 40%;
+    --accent: 220 9% 96%;
+    --accent-foreground: 220 9% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 9% 90%;
+    --input: 220 9% 96%;
+    --ring: 200 98% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-slate-900 text-slate-100 min-h-screen;
+    font-family: 'Poppins', ui-sans-serif, system-ui;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-slate-800/80 border border-slate-700/50 rounded-2xl backdrop-blur-sm;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .glass-panel-elevated {
+    @apply bg-slate-800/90 border border-slate-700/60 rounded-2xl backdrop-blur-md;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card {
+    @apply bg-slate-800/80 border border-slate-700/50 rounded-xl p-6;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .metric-card {
+    @apply bg-slate-800/60 border border-slate-700/40 rounded-xl p-4;
+    transition: all 0.2s ease-out;
+  }
+  
+  .metric-card:hover {
+    @apply bg-slate-800/80 border-slate-600/60;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-stat {
+    @apply bg-slate-800/50 border border-slate-700/40 rounded-xl p-3;
+    transition: all 0.2s ease-out;
+  }
+  
+  .weather-stat:hover {
+    @apply bg-slate-800/70 border-slate-600/60;
+  }
+  
+  /* Animation delay utilities */
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+}
