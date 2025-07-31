@@ -1,10 +1,10 @@
 # Vue Weather Dashboard 🌤️
 
+<img width="1030" height="508" alt="Screenshot 2025-07-29 at 8 29 25 PM" src="https://github.com/user-attachments/assets/ddb2e818-f780-4014-b4fb-2fd366b62095" />
+
 > A sophisticated weather dashboard built with Vue 3, TypeScript, and modern web technologies to showcase advanced frontend development skills.
 
 **[Live Demo (TBA)](#)** | **[Portfolio](https://devonhills.dev)** | **[LinkedIn](https://linkedin.com/in/devonjhills)**
-
-<img width="1030" height="945" alt="Screenshot 2025-07-29 at 8 29 25 PM" src="https://github.com/user-attachments/assets/867e1b73-19a1-4903-a8d2-daa35bf0a0fd" />
 
 ## 📋 Portfolio Overview
 
